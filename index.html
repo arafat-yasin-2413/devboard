@@ -66,30 +66,61 @@
     <main class="w-10/12 mx-auto">
 
         <!-- whole content section -->
-        <section>
+        <section class="">
             <!-- content container -->
-            <div class="grid grid-cols-4 gap-6">
-                
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+
                 <!-- content left part -->
-                <div class="col-span-3">
+                <div class="col-span-3 bg-white p-4 rounded-xl">
 
 
                     <!-- Task assigned, discover, date part -->
                     <div class="flex gap-6">
                         <!-- Task Assigned -->
-                        <div class="bg-pink-300 w-40">
-                            task assigned
-                            
+                        <div class="bg-[#F4F7FF] rounded-xl w-72 flex gap-4 px-5 py-6">
+
+                            <!-- checkbox image -->
+                            <div
+                                class="bg-base-100 p-2 flex flex-col justify-center items-center rounded-full w-10 h-10">
+                                <img class="w-8 h-8" src="./assets/checkbox.png" alt="">
+                            </div>
+
+                            <!-- texts -->
+                            <div>
+                                <h4 class="text-sm text-[#00303C] font-medium">Task Assigned</h4>
+                                <h4 class="text-2xl font-bold text-[#00303C]">05</h4>
+                            </div>
+
                         </div>
 
                         <!-- Discover something -->
-                        <div class="bg-pink-300 flex-1">
-                            discover
+                        <div
+                            class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex-1 rounded-xl text-white">
+                            <div class="flex gap-6 items-center px-5 py-2">
+                                <img class="md:ml-10" src="./assets/board.png" alt="calendar image">
+
+                                <h3 class="text-2xl">
+                                    Discover Something <br>
+                                    New Today!
+                                </h3>
+                            </div>
                         </div>
 
                         <!-- Date -->
-                        <div class="bg-pink-300 w-40">
-                            Date
+                        <div class="bg-[#F4F7FF] w-72 rounded-xl flex">
+                            <div class="flex items-center gap-4 px-4 py-2">
+
+                                <div class="bg-base-100 w-10 h-10 rounded-full flex justify-center items-center">
+                                    <img class="p-2" src="./assets/calender.png" alt="">
+                                </div>
+
+                                <p id="" class="text-[#00303C]">
+                                    <span id="week-day" class=" text-2xl"></span>
+                                    <span class="font-semibold text-2xl">, <br></span>
+                                    <span id="full-date" class="text-2xl font-semibold"></span>
+                                </p>
+
+                            </div>
                         </div>
 
                     </div>
@@ -97,36 +128,144 @@
                     <!-- All Task Cards -->
                     <div class="grid grid-cols-3 gap-6 mt-6">
                         <!-- card 1 -->
-                        <div class="bg-green-400">
-                            card 1
+                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                            <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">ShopEase</p>
+                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Fix Mobile Button Issue</h2>
+                            
+                            <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
+                                Debug using chrome <br>
+                                DevTools, check for overlappi...
+                            </p>
+                            
+                            <div class=" max-w-fit flex gap-8 items-center">
+                                <p class="text-[#00303C]">
+                                    <span class="text-sm font-light">Deadline</span>
+                                    <br>
+                                    <span class="font-medium text-base">21 March 2025</span>
+                                </p>
+
+                                <button class="btn-sm rounded-md font-light text-sm bg-[#3752FD] border-0 text-white">
+                                    Completed
+                                </button>
+                            </div>
                         </div>
 
                         <!-- card 2 -->
-                        <div class="bg-green-400">
-                            card 1
+                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                            <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">CloudSync</p>
+                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Add Dark Mode</h2>
+                            
+                            <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
+                                Store the user's preferences in <br>
+                                localStorage, update CSS vari...
+                            </p>
+                            
+                            <div class=" max-w-fit flex gap-8 items-center">
+                                <p class="text-[#00303C]">
+                                    <span class="text-sm font-light">Deadline</span>
+                                    <br>
+                                    <span class="font-medium text-base">21 March 2025</span>
+                                </p>
+
+                                <button class="btn-sm rounded-md font-light text-sm bg-[#3752FD] border-0 text-white">
+                                    Completed
+                                </button>
+                            </div>
                         </div>
 
                         <!-- card 3 -->
-                        <div class="bg-green-400">
-                            card 1
+                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                            <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">SwiftPay</p>
+                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Optimize Home Page</h2>
+                            
+                            <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
+                                Debug using chrome <br>
+                                DevTools, check for overlappi...
+                            </p>
+                            
+                            <div class=" max-w-fit flex gap-8 items-center">
+                                <p class="text-[#00303C]">
+                                    <span class="text-sm font-light">Deadline</span>
+                                    <br>
+                                    <span class="font-medium text-base">21 March 2025</span>
+                                </p>
+
+                                <button class="btn-sm rounded-md font-light text-sm bg-[#3752FD] border-0 text-white">
+                                    Completed
+                                </button>
+                            </div>
                         </div>
 
                         <!-- card 4 -->
-                        <div class="bg-green-400">
-                            card 1
+                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                            <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">Meta</p>
+                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Add new emoji 🤲</h2>
+                            
+                            <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
+                                Debug using chrome <br>
+                                DevTools, check for overlappi...
+                            </p>
+                            
+                            <div class=" max-w-fit flex gap-8 items-center">
+                                <p class="text-[#00303C]">
+                                    <span class="text-sm font-light">Deadline</span>
+                                    <br>
+                                    <span class="font-medium text-base">21 March 2025</span>
+                                </p>
+
+                                <button class="btn-sm rounded-md font-light text-sm bg-[#3752FD] border-0 text-white">
+                                    Completed
+                                </button>
+                            </div>
                         </div>
 
                         <!-- card 5 -->
-                        <div class="bg-green-400">
-                            card 1
+                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                            <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">GoogleLLC</p>
+                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Integrate OpenAI API</h2>
+                            
+                            <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
+                                Debug using chrome <br>
+                                DevTools, check for overlappi...
+                            </p>
+                            
+                            <div class=" max-w-fit flex gap-8 items-center">
+                                <p class="text-[#00303C]">
+                                    <span class="text-sm font-light">Deadline</span>
+                                    <br>
+                                    <span class="font-medium text-base">21 March 2025</span>
+                                </p>
+
+                                <button class="btn-sm rounded-md font-light text-sm bg-[#3752FD] border-0 text-white">
+                                    Completed
+                                </button>
+                            </div>
                         </div>
 
                         <!-- card 6 -->
-                        <div class="bg-green-400">
-                            card 1
+                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                            <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">Glassdoar</p>
+                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Improve Job searching</h2>
+                            
+                            <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
+                                Debug using chrome <br>
+                                DevTools, check for overlappi...
+                            </p>
+                            
+                            <div class=" max-w-fit flex gap-8 items-center">
+                                <p class="text-[#00303C]">
+                                    <span class="text-sm font-light">Deadline</span>
+                                    <br>
+                                    <span class="font-medium text-base">21 March 2025</span>
+                                </p>
+
+                                <button class="btn-sm rounded-md font-light text-sm bg-[#3752FD] border-0 text-white">
+                                    Completed
+                                </button>
+                            </div>
                         </div>
 
-                        
+
                     </div>
 
 
@@ -135,7 +274,17 @@
 
                 <!-- content right part activity log -->
                 <div class="bg-base-100 rounded-lg">
-                    <h2>activity Log</h2>
+                    
+                    <div class="flex gap-2 mt-6 mb-4 justify-center items-center">
+                        <img src="./assets/activity.png" alt="activity image">
+                        <h4 class="font-medium">Activity Log</h4>
+                    </div>
+                    
+
+                    <div class="flex  justify-center items-center mb-4">
+                        <button class="btn-sm bg-[#3752FD] text-white rounded-md ">Clear History</button>
+
+                    </div>
                 </div>
 
             </div>
@@ -154,6 +303,24 @@
 
 
 
+
+    <script>
+        const currentDateObject = new Date();
+
+        const weekDay = currentDateObject.toLocaleDateString('en-US', { weekday: 'long' });
+
+        const fullDate = currentDateObject.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        document.getElementById('week-day').innerText = weekDay;
+        document.getElementById('full-date').innerText = fullDate;
+
+
+
+    </script>
 
 
 </body>
