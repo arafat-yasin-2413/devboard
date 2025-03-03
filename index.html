@@ -210,7 +210,7 @@
 
                             </div>
 
-                            <div class="w-11/12 gap-1 flex items-center">
+                            <div class="w-11/12 gap-12 flex items-center">
                                 <p class="text-[#00303C]">
                                     <span class="text-sm font-light">Deadline</span>
                                     <br>
@@ -377,7 +377,7 @@
     <script>
         const currentDateObject = new Date();
 
-        const weekDay = currentDateObject.toLocaleDateString('en-US', { weekday: 'long' });
+        const weekDay = currentDateObject.toLocaleDateString('en-US', { weekday: 'short' });
 
         const fullDate = currentDateObject.toLocaleDateString('en-US', {
             year: 'numeric',
