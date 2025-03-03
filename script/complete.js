@@ -8,6 +8,10 @@ const totalTask = document.getElementById("total-task");
 activityDiv = document.getElementById("activity-div");
 
 // button gular upore loop chalai
+
+// last card paisi kina check korar jonno
+let count = 0;
+
 for (let i = 0; i < completedButtons.length; i++) {
 	let button = completedButtons[i];
 	// console.log(button);
@@ -19,7 +23,6 @@ for (let i = 0; i < completedButtons.length; i++) {
 		// ok te click korar por nicher kaj gulo hobe
 
 		
-        
         
         
         
@@ -77,5 +80,11 @@ for (let i = 0; i < completedButtons.length; i++) {
 		// button ta disable kori
 		button.disabled = true;
 		button.classList.add("opacity-50", "cursor-not-allowed", "bg-gray-400");
+        count++;
+
+        if(count === 6) {
+            alert('Congrats!!! You have compelted all the current task')
+        }
+
 	});
 }
