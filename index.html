@@ -128,9 +128,9 @@
                     <!-- All Task Cards -->
                     <div class="grid grid-cols-3 gap-6 mt-6">
                         <!-- card 1 -->
-                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                        <div id="card-1" class="bg-[#F4F7FF] rounded-xl p-6">
                             <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">ShopEase</p>
-                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Fix Mobile Button Issue</h2>
+                            <h2 id="card-title-1" class="text-[#00303C] text-2xl font-medium mb-3">Fix Mobile Button Issue</h2>
                             
                             <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
                                 Debug using chrome <br>
@@ -151,9 +151,9 @@
                         </div>
 
                         <!-- card 2 -->
-                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                        <div id="card-2" class="bg-[#F4F7FF] rounded-xl p-6">
                             <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">CloudSync</p>
-                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Add Dark Mode</h2>
+                            <h2 id="card-title-2" class="text-[#00303C] text-2xl font-medium mb-3">Add Dark Mode</h2>
                             
                             <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
                                 Store the user's preferences in <br>
@@ -174,9 +174,9 @@
                         </div>
 
                         <!-- card 3 -->
-                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                        <div id="card-3" class="bg-[#F4F7FF] rounded-xl p-6">
                             <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">SwiftPay</p>
-                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Optimize Home Page</h2>
+                            <h2 id="card-title-3" class="text-[#00303C] text-2xl font-medium mb-3">Optimize Home Page</h2>
                             
                             <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
                                 Debug using chrome <br>
@@ -197,9 +197,9 @@
                         </div>
 
                         <!-- card 4 -->
-                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                        <div id="card-4" class="bg-[#F4F7FF] rounded-xl p-6">
                             <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">Meta</p>
-                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Add new emoji 🤲</h2>
+                            <h2 id="card-title-4" class="text-[#00303C] text-2xl font-medium mb-3">Add new emoji 🤲</h2>
                             
                             <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
                                 Debug using chrome <br>
@@ -220,9 +220,9 @@
                         </div>
 
                         <!-- card 5 -->
-                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                        <div id="card-5" class="bg-[#F4F7FF] rounded-xl p-6">
                             <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">GoogleLLC</p>
-                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Integrate OpenAI API</h2>
+                            <h2 id="card-title-5" class="text-[#00303C] text-2xl font-medium mb-3">Integrate OpenAI API</h2>
                             
                             <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
                                 Debug using chrome <br>
@@ -243,9 +243,9 @@
                         </div>
 
                         <!-- card 6 -->
-                        <div class="bg-[#F4F7FF] rounded-xl p-6">
+                        <div id="card-6" class="bg-[#F4F7FF] rounded-xl p-6">
                             <p class="bg-base-100 max-w-fit px-2 py-2 text-[#00303C] text-sm rounded-md font-medium mb-2">Glassdoar</p>
-                            <h2 class="text-[#00303C] text-2xl font-medium mb-3">Improve Job searching</h2>
+                            <h2 id="card-title-6" class="text-[#00303C] text-2xl font-medium mb-3">Improve Job searching</h2>
                             
                             <p class="bg-base-100 text-sm max-w-fit p-2 rounded-md py-3 font-light mb-4">
                                 Debug using chrome <br>
@@ -282,9 +282,16 @@
                     
 
                     <div class="flex  justify-center items-center mb-4">
-                        <button class="btn-sm bg-[#3752FD] text-white rounded-md ">Clear History</button>
+                        <button id="clear-history-btn" class="btn-sm bg-[#3752FD] text-white rounded-md ">Clear History</button>
 
                     </div>
+
+
+                    <!-- Activities div -->
+                    <div id="activity-div" class="mt-6 p-6">
+                        
+                    </div>
+
                 </div>
 
             </div>
@@ -324,6 +331,7 @@
 
     <script src="./script/utilities.js"></script>
     <script src="./script/complete.js"></script>
+    <script src="./script/clearHistory.js"></script>
 
 
 </body>

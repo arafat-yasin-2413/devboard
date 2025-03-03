@@ -1,33 +1,81 @@
 const completedButtons = document.querySelectorAll(".completed-btn");
 
+// taskassigned , totaltask er html ke dhorlam
 const taskAssigned = document.getElementById("task-assigned");
 const totalTask = document.getElementById("total-task");
 
-for (let button of completedButtons) {
+// activity div ke dhori
+activityDiv = document.getElementById("activity-div");
+
+// button gular upore loop chalai
+for (let i = 0; i < completedButtons.length; i++) {
+	let button = completedButtons[i];
+	// console.log(button);
 	button.addEventListener("click", function () {
 		// showing alert
 		alert("Board updated successfully");
 
 		console.log("okay te click korar por dekhacchi...");
-        // ok te click korar por nicher kaj gulo hobe
+		// ok te click korar por nicher kaj gulo hobe
 
+		
+        
+        
+        
+        
+        
+        
+        
+
+        // ei button jei card er
+        // setar title dhortesi
+		let dynamicCardTitleId = `card-title-${i + 1}`;
+		let cardTitle = document.getElementById(dynamicCardTitleId).innerText;
+
+
+		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         // protibar number gulo ke dhori
 		let taskAssignedInt = parseInt(taskAssigned.innerText);
 		let totalTaskInt = parseInt(totalTask.innerText);
 
-        // protibar number gulo ke update kori
+		// protibar number gulo ke update kori
 		taskAssigned.innerText = taskAssignedInt - 1;
 		totalTask.innerText = totalTaskInt + 1;
 
-        
-        
-        
-        
-        
-        
-        
-        // button ta disable kori
-        button.disabled = true;
-        button.classList.add('opacity-50', 'cursor-not-allowed', 'bg-gray-400');
+		// activity te likha add kori
+		const liveTime = new Date().toLocaleTimeString();
+		activityDiv.innerHTML += `
+            <p class="bg-[#F4F7FF] text-sm p-2 rounded mb-6">
+                You have completed the task <b>"${cardTitle}"</b> at ${liveTime}
+            </p>
+        `;
+
+		// button ta disable kori
+		button.disabled = true;
+		button.classList.add("opacity-50", "cursor-not-allowed", "bg-gray-400");
 	});
 }
