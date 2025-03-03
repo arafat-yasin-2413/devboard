@@ -19,15 +19,10 @@ for (let i = 0; i < completedButtons.length; i++) {
 		// showing alert
 		alert("Board updated successfully");
 
-		console.log("okay te click korar por dekhacchi...");
+		// console.log("okay te click korar por dekhacchi...");
 		// ok te click korar por nicher kaj gulo hobe
 
 		
-        
-        
-        
-        
-        
         
 
         // ei button jei card er
@@ -36,30 +31,7 @@ for (let i = 0; i < completedButtons.length; i++) {
 		let cardTitle = document.getElementById(dynamicCardTitleId).innerText;
 
 
-		
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
         
         // protibar number gulo ke dhori
 		let taskAssignedInt = parseInt(taskAssigned.innerText);
@@ -83,7 +55,7 @@ for (let i = 0; i < completedButtons.length; i++) {
         count++;
 
         if(count === 6) {
-            alert('Congrats!!! You have compelted all the current task')
+            alert('Congrats!!! You have completed all the current task')
         }
 
 	});
