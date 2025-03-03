@@ -82,23 +82,25 @@
                     </h3>
 
                     <p>
-                        <p class="mb-2">
-                            <b>innerHTML </b> gives html elements with their tag and contents in it. for instance, we have a
-                            div with id = "heading". It has a h3 tag and a p tag with contents inside them. Now if I write
-                            console.log(document.getElementById('heading').innerHTML); <br>
-                            It will return the whole contents with their html tags like a string. output shown in the below text area:
-                        </p>
-                        <textarea class="bg-teal-200 p-4 rounded-md" name="" rows="3" cols="90" id=""><h3>simple assignment</h3>
+                    <p class="mb-2">
+                        <b>innerHTML </b> gives html elements with their tag and contents in it. for instance, we have a
+                        div with id = "heading". It has a h3 tag and a p tag with contents inside them. Now if I write
+                        console.log(document.getElementById('heading').innerHTML); <br>
+                        It will return the whole contents with their html tags like a string. output shown in the below
+                        text area:
+                    </p>
+                    <textarea class="bg-teal-200 p-4 rounded-md" name="" rows="3" cols="90" id=""><h3>simple assignment</h3>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vitae.</p>
                         </textarea>
                     </p>
 
                     <p class="mb-2">
-                        <b>innerText </b> provides only the text content of an html tag. it gives the text contents of that html tag. 
+                        <b>innerText </b> provides only the text content of an html tag. it gives the text contents of
+                        that html tag.
                     </p>
 
                     <p class="mb-2">
-                        <b>textContent </b> gives all the texts of a div or html tag. 
+                        <b>textContent </b> gives all the texts of a div or html tag.
                     </p>
 
                 </div>
@@ -108,6 +110,11 @@
                     </h3>
 
                     <p>
+                        Event delegation হচ্ছে এমন একটি পদ্ধতি যার মাধ্যমে কোনো HTML
+                        এলিমেন্টের প্যারেন্টের উপর addEventListener বসিয়ে তার child গুলোকে
+                        অ্যাক্সেস কর যায়। এক্ষেত্রে প্রতিটা child এ event listener বসানোর প্রয়োজন হয় না।
+                        আমরা প্যারেন্টে event listener বসিয়ে callback ফাংশনে event কে পাস করি।
+                        তারপর event.target দিয়ে child গুলোকে ধরি। এটা event bubble এর মাধ্যমে কাজ করে।
 
                     </p>
                 </div>
@@ -117,6 +124,12 @@
                     </h3>
 
                     <p>
+                        Event Bubbling হলো DOM এর এমন বৈশিষ্ট্য যেখানে কোনো child এলিমেন্টের উপর
+                        event ট্রিগার হয়ে সেই event টি তার প্যারেন্ট এলিমেন্টের দিকে ধাপে ধাপে যেতে থাকে।
+                        event টি উপরের দিকে document না পাওয়া পর্যন্ত যেতে থাকে।
+                        এটা অনেকটা পানির নিচ থেকে উপরের দিকে bubble উঠে যাওয়ার মতো করে কাজ করে।
+                        এভাবে কোনো একটা event নিচ থেকে উপরের দিকে bubble করতে করতে যায়।
+
 
                     </p>
                 </div>
@@ -126,28 +139,41 @@
                     </h3>
 
                     <p>
+                        <b>create:</b> <br>
+                    <p>
+                        const newP = document.createElement('p'); <br>
+                        newP.innerText = "A quick brown fox had a nice tail.";
+                    </p>
 
+                    <br>
+
+                    <p>
+                        <b>add:</b> <br>
+                    </p>
+                    <p>
+                        const parentDiv = document.getElementById('parent-div'); <br>
+                        const h3 = document.createElement('h3'); <br>
+                        h3.innerText = "DOM is the life to my website"; <br>
+                        parentDiv.appendChild(h3); <br>
+                    </p>
+                    </p>
+
+                    <p>
+                        <b>remove:</b>
+                    </p>
+
+                    <p>
+                        const items = document.getElementById('items'); <br>
+                        const child = document.getElementById('child-3'); <br>
+
+                        items.removeChild(child); <br>
                     </p>
                 </div>
             </div>
         </section>
 
 
-        <div id="heading">
-            <h3>simple assignment</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vitae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sapiente iure. Optio quos et perspiciatis, esse vero ea quasi non?</p>
-        </div>
-
-
-    </main>
-
-
-
-    <script>
-        console.log(document.getElementById('heading').textContent);
-    </script>
-
+      
 
 
 
