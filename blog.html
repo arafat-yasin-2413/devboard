@@ -44,7 +44,7 @@
                     </a>
 
 
-                    
+
                 </div>
             </div>
 
@@ -58,35 +58,99 @@
     <!-- main contents part -->
     <main class="w-10/12  mx-auto">
         <!-- Blog Section Starts -->
-        <section>
+        <section class="pb-16">
             <h2 class="text-center font-bold text-3xl text-[#00303C mb-4">Blogs</h2>
 
             <div class="">
-                <div class="bg-base-100 p-4 rounded-xl">
+                <div class="bg-base-100 p-4 rounded-xl mb-6">
                     <h3 class="text-xl font-semibold mb-4">
                         Question-1: What are the different ways to select an element in the DOM?
                     </h3>
 
                     <p>
-                        We can select html elements using DOM in 4 different ways. They are : <br>
-                        i) document.getElementById() <br>
-                        ii) document.getElementsByClassName() <br>
-                        iii) document.querySelector() <br>
-                        iv) document.querySelectorAll() <br>
+                        We can select html elements using DOM in 5 different ways. They are : <br>
+                        a) getElementById() <br>
+                        b) getElementsByTagName() <br>
+                        c) getElementsByClassName() <br>
+                        d) querySelector() <br>
+                        e) querySelectorAll() <br>
+                    </p>
+                </div>
+                <div class="bg-base-100 p-4 rounded-xl mb-6">
+                    <h3 class="text-xl font-semibold mb-4">
+                        Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                    </h3>
+
+                    <p>
+                        <p class="mb-2">
+                            <b>innerHTML </b> gives html elements with their tag and contents in it. for instance, we have a
+                            div with id = "heading". It has a h3 tag and a p tag with contents inside them. Now if I write
+                            console.log(document.getElementById('heading').innerHTML); <br>
+                            It will return the whole contents with their html tags like a string. output shown in the below text area:
+                        </p>
+                        <textarea class="bg-teal-200 p-4 rounded-md" name="" rows="3" cols="90" id=""><h3>simple assignment</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vitae.</p>
+                        </textarea>
+                    </p>
+
+                    <p class="mb-2">
+                        <b>innerText </b> provides only the text content of an html tag. it gives the text contents of that html tag. 
+                    </p>
+
+                    <p class="mb-2">
+                        <b>textContent </b> gives all the texts of a div or html tag. 
+                    </p>
+
+                </div>
+                <div class="bg-base-100 p-4 rounded-xl mb-6">
+                    <h3 class="text-xl font-semibold mb-4">
+                        Question-3: What is event delegation in the DOM?
+                    </h3>
+
+                    <p>
+
+                    </p>
+                </div>
+                <div class="bg-base-100 p-4 rounded-xl mb-6">
+                    <h3 class="text-xl font-semibold mb-4">
+                        Question-4: What is event bubbling in the DOM?
+                    </h3>
+
+                    <p>
+
+                    </p>
+                </div>
+                <div class="bg-base-100 p-4 rounded-xl mb-6">
+                    <h3 class="text-xl font-semibold mb-4">
+                        Question-5: How do you create, add, and remove elements using JavaScript?
+                    </h3>
+
+                    <p>
+
                     </p>
                 </div>
             </div>
         </section>
 
 
+        <div id="heading">
+            <h3>simple assignment</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vitae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sapiente iure. Optio quos et perspiciatis, esse vero ea quasi non?</p>
+        </div>
+
+
     </main>
 
 
 
+    <script>
+        console.log(document.getElementById('heading').textContent);
+    </script>
 
 
 
-    
+
 
 </body>
 
